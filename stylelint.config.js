@@ -1,8 +1,13 @@
 module.exports = {
   extends: [
-    'stylelint-config-standard'
+    'stylelint-config-sass-guidelines',
   ],
-  // add your custom config here
-  // https://stylelint.io/user-guide/configuration
-  rules: {}
-}
+  rules: {
+    'color-hex-case': null,
+    'selector-class-pattern': null,
+    'selector-max-compound-selectors': null,
+    'max-nesting-depth': [4, {
+      ignore: ['pseudo-classes'],
+    }],
+  },
+};
