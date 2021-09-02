@@ -19,6 +19,7 @@ module.exports = {
       sm: '0.983rem',
     },
     colors: {
+      transparent: 'transparent',
       primary: {
         midnightGreen: '#014E56',
         lightCoral: '#F67E7E',
@@ -42,7 +43,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+    },
   },
   plugins: [],
 };

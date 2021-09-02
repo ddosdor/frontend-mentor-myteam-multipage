@@ -30,6 +30,7 @@ export default {
     '@nuxt/typescript-build',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/composition-api/module',
   ],
   modules: [
     '@nuxtjs/pwa',
