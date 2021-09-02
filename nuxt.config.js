@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  router: {
+    base: '/',
+  },
   head: {
     title: 'frontend-mentor-myteam-multipage',
     meta: [
@@ -34,7 +37,13 @@ export default {
   ],
   modules: [
     '@nuxtjs/pwa',
+    '@nuxt/image',
   ],
+  storybook: {
+    parameters: {
+      layout: 'fullscreen',
+    },
+  },
   pwa: {
     manifest: {
       lang: 'en',

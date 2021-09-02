@@ -40,7 +40,18 @@ module.exports = {
       28: '28px',
       25: '25px',
     },
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        screens: {
+          sm: '327px',
+          md: '689px',
+          lg: '1110px',
+          xl: '1110px',
+          '2xl': '1110px',
+        },
+      },
+    },
   },
   variants: {
     extend: {
