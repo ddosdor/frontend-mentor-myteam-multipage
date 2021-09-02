@@ -9,6 +9,9 @@
     <h2>Jived fox nymph grabs quick waltz</h2>
     <h3>Jived fox nymph grabs quick waltz</h3>
     <span class="ui-as-link">This is link</span>
+    <SharedUiHeading>
+      Grabs quick waltz
+    </SharedUiHeading>
     <div class="p-20 space-y-2">
       <h4>Primary</h4>
       <div class="flex space-x-4">
