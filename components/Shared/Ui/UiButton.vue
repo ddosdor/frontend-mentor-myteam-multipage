@@ -17,10 +17,25 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
 export default defineComponent({
   name: 'UiButton',
   props: {
+    /**
+     * Set button as primary type
+     */
     primary: Boolean,
+    /**
+     * Set button as primary-dark type
+     */
     primaryDark: Boolean,
+    /**
+     * Set button as secondary
+     */
     secondary: Boolean,
-    disabled: Boolean,
+    /**
+     * Set button as disabled
+     */
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props) {
     const buttonType = ref<String>('primary');
