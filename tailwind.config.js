@@ -26,6 +26,7 @@ module.exports = {
         white: '#FFF',
       },
       secondary: {
+        eggshelBlue: '#C4FFFE',
         raptureBlue: '#79C8C7',
         policeBlue: '#2C6269',
         deepJungleGreen: '#004047',

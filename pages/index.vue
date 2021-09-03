@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <SharedMainLogo />
-    <SharedMainLogo smaller />
+    <SharedUiAvatar src="/avatars/avatar-kady.jpg" />
   </div>
 </template>
 
