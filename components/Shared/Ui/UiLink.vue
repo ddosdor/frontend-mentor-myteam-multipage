@@ -5,7 +5,7 @@
                     focus:text-primary-lightCoral
                    "
              v-bind="$attrs"
-             :to="href"
+             :[linkKey]="href"
   >
     <slot />
   </component>
@@ -29,6 +29,7 @@ export default defineComponent({
   },
   setup(props) {
     return {
+      linkKey: props.external ? 'href' : 'to',
       linkType: props.external ? 'a' : 'NuxtLink',
     };
   },
