@@ -3,6 +3,12 @@ import UiSocialIcon from '../UiSocialIcon.vue';
 export default {
   component: UiSocialIcon,
   title: 'Shared/Ui/UiSocialIcon',
+  args: {
+    hovered: false,
+  },
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 const Template = (args, { argTypes }) => ({

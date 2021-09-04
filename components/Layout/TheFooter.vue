@@ -36,9 +36,30 @@
                     lg:justify-end lg:mb-[3.188rem] lg:w-full
                    "
         >
-          <SharedUiSocialIcon facebook />
-          <SharedUiSocialIcon pinterest />
-          <SharedUiSocialIcon twitter />
+          <SharedUiLink external
+                        href="#"
+                        aria-label="Go to our facebook account"
+          >
+            <SharedUiSocialIcon facebook
+                                hovered
+            />
+          </SharedUiLink>
+          <SharedUiLink external
+                        href="#"
+                        aria-label="Go to our pinteres account"
+          >
+            <SharedUiSocialIcon pinterest
+                                hovered
+            />
+          </SharedUiLink>
+          <SharedUiLink external
+                        href="#"
+                        aria-label="Go to our twitter account"
+          >
+            <SharedUiSocialIcon twitter
+                                hovered
+            />
+          </SharedUiLink>
         </div>
         <SharedUiTextContent smaller
                              class="opacity-60 lg:text-right"

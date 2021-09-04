@@ -2,9 +2,10 @@
   <svg xmlns="http://www.w3.org/2000/svg"
        width="24"
        height="24"
+       class="fill-current text-primary-white transition-colors duration-150"
+       :class="{ 'hover:text-primary-lightCoral': hovered }"
   >
     <path v-if="twitter"
-          fill="#FFF"
           d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0
             0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916
             4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797
@@ -16,7 +17,6 @@
             10.025 0 0024 2.557z"
     />
     <path v-if="linkedin"
-          fill="#FFF"
           d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0
             2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1
             0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17
@@ -24,7 +24,6 @@
             1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
     />
     <path v-if="pinterest"
-          fill="#FFF"
           d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426
             7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937
             1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914
@@ -39,7 +38,6 @@
             12-5.373 12-12 0-6.628-5.373-12-12-12z"
     />
     <path v-if="facebook"
-          fill="#FFF"
           d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593
             24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1
             1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504
@@ -59,6 +57,10 @@ export default defineComponent({
     linkedin: Boolean,
     pinterest: Boolean,
     facebook: Boolean,
+    /**
+     * Change color on hover
+     */
+    hovered: Boolean,
   },
 });
 </script>

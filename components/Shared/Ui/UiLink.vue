@@ -1,6 +1,6 @@
 <template>
   <component :is="linkType"
-             class="UiLink transition-colors duration-150
+             class="UiLink transition-colors duration-150 cursor-pointer
                     hover:text-primary-lightCoral
                     focus:text-primary-lightCoral
                    "
