@@ -62,9 +62,9 @@ export default defineComponent({
     @apply disabled:bg-transparent disabled:text-primary-white
 
   &--primaryDark
-    @apply border-primary-midnightGreen bg-transparent text-primary-midnightGreen
-    @apply hover:bg-primary-midnightGreen hover:border-primary-midnightGreen hover:text-primary-white
-    @apply disabled:border-primary-midnightGreen disabled:bg-transparent disabled:text-primary-midnightGreen
+    @apply border-secondary-sacramentoStateGreen bg-transparent text-secondary-sacramentoStateGreen
+    @apply hover:bg-secondary-sacramentoStateGreen hover:border-secondary-sacramentoStateGreen hover:text-primary-white
+    @apply disabled:border-secondary-sacramentoStateGreen disabled:bg-transparent disabled:text-secondary-sacramentoStateGreen
 
   &--secondary
     @apply border-primary-white bg-primary-white text-primary-midnightGreen

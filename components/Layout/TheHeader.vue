@@ -1,6 +1,8 @@
 <template>
-  <header class="TheHeader">
-    Component LayoutHeader
+  <header class="TheHeader py-12">
+    <div class="container">
+      <SharedMainLogo />
+    </div>
   </header>
 </template>
 

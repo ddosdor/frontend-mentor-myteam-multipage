@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <SharedUiAvatar src="/avatars/avatar-kady.jpg" />
+  <div class="flex flex-col flex-grow justify-end">
+    <SectionsCtaSection />
   </div>
 </template>
 
