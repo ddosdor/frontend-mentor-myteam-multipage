@@ -3,7 +3,7 @@ import SuccessStoriesSection from '../SuccessStoriesSection.vue';
 
 export default {
   component: SuccessStoriesSection,
-  title: 'Sections/CtaSection',
+  title: 'Sections/SuccessStoriesSection',
 };
 
 export const Default = () => ({
