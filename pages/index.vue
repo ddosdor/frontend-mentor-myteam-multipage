@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col flex-grow justify-end">
+    <SectionsSuccessStoriesSection />
     <SectionsCtaSection />
   </div>
 </template>
