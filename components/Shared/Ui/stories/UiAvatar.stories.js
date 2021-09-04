@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import UiAvatar from '../UiAvatar.vue';
 
 export default {
@@ -5,6 +6,7 @@ export default {
   title: 'Shared/Ui/UiAvatar',
   args: {
     src: '/avatars/avatar-kady.jpg',
+    alt: 'Avatar description',
   },
   parameters: {
     layout: 'centered',

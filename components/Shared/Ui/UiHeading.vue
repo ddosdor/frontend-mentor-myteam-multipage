@@ -62,7 +62,7 @@ h1,.small
 
 h2
   @apply text-[32px] leading-[32px]
-  @apply md:text-[48px] md:leading-48
+  @apply lg:text-[48px] lg:leading-48
 
 h3
   @apply text-[18px] leading-28

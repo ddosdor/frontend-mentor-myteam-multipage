@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import MainNavigation from '../MainNavigation.vue';
 
 export default {

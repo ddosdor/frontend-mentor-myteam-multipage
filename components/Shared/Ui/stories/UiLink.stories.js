@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import UiLink from '../UiLink.vue';
 
 export default {

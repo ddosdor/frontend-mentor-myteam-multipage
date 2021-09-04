@@ -3,13 +3,14 @@
     <NuxtImg src="/logo.svg"
              :width="width"
              :height="height"
+             alt="myteam logo"
     />
   </client-only>
 </template>
 
 <script lang="ts">
 import { defineComponent, computed } from '@nuxtjs/composition-api';
-import { useMediaQuery } from '@vueuse/core';
+import { useBreakpoints, breakpointsTailwind } from '@vueuse/core';
 
 export default defineComponent({
   name: 'MainLogo',
@@ -20,14 +21,13 @@ export default defineComponent({
     smaller: Boolean,
   },
   setup(props) {
-    const isTabletOrMobile = useMediaQuery('(max-width: 768px)');
+    const breakpoints = useBreakpoints(breakpointsTailwind);
     const widthSmaller = props.smaller ? '96px' : '128px';
     const heightSmaller = props.smaller ? '24px' : '32px';
 
     return {
-      isTabletOrMobile,
-      width: computed(() => (isTabletOrMobile.value ? widthSmaller : '160px')),
-      height: computed(() => (isTabletOrMobile.value ? heightSmaller : '40px')),
+      width: computed(() => (breakpoints.smaller('lg').value ? widthSmaller : '160px')),
+      height: computed(() => (breakpoints.smaller('lg').value ? heightSmaller : '40px')),
     };
   },
 });

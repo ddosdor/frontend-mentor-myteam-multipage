@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import MainLogo from '../MainLogo.vue';
 
 export default {

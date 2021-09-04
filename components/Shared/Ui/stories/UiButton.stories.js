@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import UiButton from '../UiButton.vue';
 
 export default {
