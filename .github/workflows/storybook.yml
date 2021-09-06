@@ -16,7 +16,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main
+          BRANCH: storybook
           FOLDER: storybook-static
           CLEAN: true
           TARGET_FOLDER: docs
