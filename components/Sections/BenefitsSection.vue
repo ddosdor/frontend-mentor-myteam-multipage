@@ -4,10 +4,7 @@
                  "
            :style="style"
   >
-    <div class="container md:px-[3.625rem]
-                lg:px-0 lg:flex lg:flex-row lg:space-x-[7.813rem]
-               "
-    >
+    <SharedUtilitiesSectionContainerWrapper class="lg:flex lg:flex-row lg:space-x-[7.813rem]">
       <div>
         <SharedUiDivider coral
                          class="mb-8 lg:mb-[3.375rem]"
@@ -21,7 +18,7 @@
         </SharedUiHeading>
       </div>
       <SectionsPartialsBenefitsList class="lg:mt-[3.625rem]" />
-    </div>
+    </SharedUtilitiesSectionContainerWrapper>
   </section>
 </template>
 

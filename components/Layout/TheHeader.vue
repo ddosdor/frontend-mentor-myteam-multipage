@@ -1,5 +1,5 @@
 <template>
-  <header class="TheHeader py-12">
+  <header class="TheHeader py-12 lg:py-[4.563rem]">
     <div class="container">
       <SharedMainLogo />
     </div>

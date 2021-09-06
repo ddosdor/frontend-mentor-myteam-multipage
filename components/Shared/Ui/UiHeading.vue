@@ -58,7 +58,8 @@ h1,.large
   @apply text-[100px] leading-100
 
 h1,.small
-  @apply text-[64px] leading-56
+  @apply text-[40px] leading-[40px]
+  @apply md:text-[64px] md:leading-56
 
 h2
   @apply text-[32px] leading-[32px]

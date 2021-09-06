@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import UiTextContent from '../UiTextContent.vue';
+import TextContentWrapper from '../TextContentWrapper.vue';
 
 export default {
-  component: UiTextContent,
-  title: 'Shared/Ui/UiTextContent',
+  component: TextContentWrapper,
+  title: 'Shared/Utilities/TextContentWrapper',
   args: {
     slotContent: `
       Sed egestas, ante et vulputate volutpat, eros pede semper est,
@@ -20,17 +20,17 @@ export default {
 };
 
 const Template = (args, { argTypes }) => ({
-  components: { UiTextContent },
+  components: { TextContentWrapper },
   props: Object.keys(argTypes),
   template: `
-  <UiTextContent v-bind="$props">
+  <TextContentWrapper v-bind="$props">
     {{ slotContent }}
-  </UiTextContent>`,
+  </TextContentWrapper>`,
 });
 
 export const Default = Template.bind({});
 
-export const Small = Template.bind({});
-Small.args = {
+export const Smaller = Template.bind({});
+Smaller.args = {
   smaller: true,
 };

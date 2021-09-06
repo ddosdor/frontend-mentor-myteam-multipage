@@ -13,12 +13,16 @@
                   md:items-start
                  "
       >
-        <label class="block text-primary-lightCoral font-bold leading-28">{{ benefit.name }}</label>
-        <SharedUiTextContent smaller
-                             class="opacity-80"
+        <SharedUiHeading h3
+                         class="text-primary-lightCoral"
+        >
+          {{ benefit.name }}
+        </SharedUiHeading>
+        <SharedUtilitiesTextContentWrapper smaller
+                                           class="opacity-80"
         >
           {{ benefit.description }}
-        </SharedUiTextContent>
+        </SharedUtilitiesTextContentWrapper>
       </div>
     </li>
   </ul>

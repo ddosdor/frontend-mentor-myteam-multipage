@@ -16,17 +16,17 @@
                                 class="mb-6 lg:mb-0"
           />
         </div>
-        <SharedUiTextContent smaller
-                             class="opacity-60 mb-10 text-center
-                                    md:text-right
-                                    lg:mb-0
-                                   "
+        <SharedUtilitiesTextContentWrapper smaller
+                                           class="opacity-60 mb-10 text-center
+                                                  md:text-right
+                                                  lg:mb-0
+                                                  "
         >
           987  Hillcrest Lane,<br>
           Irvine, CA<br>
           California 92714<br>
           Call Us : 949-833-7432
-        </SharedUiTextContent>
+        </SharedUtilitiesTextContentWrapper>
       </div>
       <div class="md:flex md:justify-between md:w-full
                   lg:flex-col
@@ -61,11 +61,11 @@
             />
           </SharedUiLink>
         </div>
-        <SharedUiTextContent smaller
-                             class="opacity-60 lg:text-right"
+        <SharedUtilitiesTextContentWrapper smaller
+                                           class="opacity-60 lg:text-right"
         >
           Copyright 2020. All Rights Reserved
-        </SharedUiTextContent>
+        </SharedUtilitiesTextContentWrapper>
       </div>
     </div>
   </footer>
@@ -76,8 +76,5 @@ import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
   name: 'TheFooter',
-  setup() {
-    // component setup
-  },
 });
 </script>

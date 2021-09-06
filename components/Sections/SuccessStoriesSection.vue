@@ -4,7 +4,7 @@
                  "
            :style="style"
   >
-    <div class="container md:px-[3.625rem] lg:px-0">
+    <SharedUtilitiesSectionContainerWrapper>
       <SharedUiHeading h2
                        class="mb-12 !text-center
                               lg:w-[932px] lg:mx-auto
@@ -14,7 +14,7 @@
         <span class="text-secondary-raptureBlue">success stories.</span>
       </SharedUiHeading>
       <SectionsPartialsSuccessStoriesList />
-    </div>
+    </SharedUtilitiesSectionContainerWrapper>
   </section>
 </template>
 

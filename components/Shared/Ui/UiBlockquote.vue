@@ -2,11 +2,11 @@
   <blockquote class="UiBlockquote pt-9"
               :style="style"
   >
-    <SharedUiTextContent smaller
-                         class="!text-center"
+    <SharedUtilitiesTextContentWrapper smaller
+                                       class="!text-center"
     >
       <slot />
-    </SharedUiTextContent>
+    </SharedUtilitiesTextContentWrapper>
   </blockquote>
 </template>
 
