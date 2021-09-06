@@ -4,7 +4,7 @@
             "
   >
     <li v-for="(storie, index) in successStoriesListData"
-        :key="`storie-index-${index}`"
+        :key="`stories-index-${index}`"
         class="flex flex-col items-center"
     >
       <SharedUiBlockquote class="mb-4">

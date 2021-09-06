@@ -15,8 +15,8 @@ module.exports = {
       sans: ['Livvic', ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
-      base: '1.125rem',
-      sm: '0.983rem',
+      base: '18px',
+      sm: '15px',
     },
     colors: {
       transparent: 'transparent',
