@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import UiFancyIcon from '../UiFancyIcon.vue';
 
 export default {

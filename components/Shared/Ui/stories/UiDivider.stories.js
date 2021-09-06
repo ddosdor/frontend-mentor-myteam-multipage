@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import UiDivider from '../UiDivider.vue';
 
 export default {
