@@ -1,12 +1,19 @@
 <template>
-  <section class="SuccessStoriesSection bg-secondary-deepJungleGreen pt-[8.75rem] pb-[10.25rem]"
+  <section class="SuccessStoriesSection bg-secondary-deepJungleGreen pt-[8.75rem] pb-[10.25rem]
+                  md:py-[6.25rem] lg:py-[8.75rem]
+                 "
            :style="style"
   >
-    <div class="container">
-      <SharedUiHeading h2>
+    <div class="container md:px-[3.625rem] lg:px-0">
+      <SharedUiHeading h2
+                       class="mb-12 !text-center
+                              lg:w-[932px] lg:mx-auto
+                             "
+      >
         <span>Delivering real results for top companies. Some of our</span>
         <span class="text-secondary-raptureBlue">success stories.</span>
       </SharedUiHeading>
+      <SectionsPartialsSuccessStoriesList />
     </div>
   </section>
 </template>

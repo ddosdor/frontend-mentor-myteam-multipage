@@ -19,7 +19,7 @@ export default {
         rel: 'stylesheet',
         media: 'print',
         onload: 'this.onload=null;this.removeAttribute(\'media\');',
-        href: 'https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,500;0,600;0,700;1,500&display=swap',
       },
     ],
   },
