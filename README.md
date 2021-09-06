@@ -1,69 +1,58 @@
-# frontend-mentor-myteam-multipage
+# Frontend Mentor - myteam website solution
 
-## Build Setup
+Since one of my goals for this year (2021) is to improve my skills with Figma and TailwindCSS I took a "workshop" on one of the chalenges from Frontend Mentor.
 
-```bash
-# install dependencies
-$ yarn install
+This is a solution to the [myteam website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW). 
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Table of contents
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+- [Frontend Mentor - myteam website solution](#frontend-mentor---myteam-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+## Overview
 
-# generate static project
-$ yarn generate
-```
+### The challenge
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Users should be able to:
 
-## Special Directories
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- See the correct content for each team member on the About page when the `+` icon is clicked
+- Receive an error message when the contact form is submitted if:
+  - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
+  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+### Screenshot
 
-### `assets`
+Soon...
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+### Links
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+- Page URL: [frontend-mentor-myteam-multipage-puvz6ojyn-ddosdor.vercel.app](https://frontend-mentor-myteam-multipage-puvz6ojyn-ddosdor.vercel.app/)
+- Storybook URL: [Add live site URL here](https://your-live-site-url.com)
 
-### `components`
+## My process
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+### Built with
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+- [Nuxt.js](https://nuxtjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Storybook](https://storybook.js.org/)
+- [nuxt/storybook](https://storybook.nuxtjs.org/)
+- [nuxt/image](https://image.nuxtjs.org/)
+- [Figma](https://www.figma.com/)
 
-### `layouts`
+### Useful resources
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+- [Px to rem](https://nekocalc.com/px-to-rem-converter) - This helped me calculate from px to rem.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## Author
 
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+- Website - [onemeaning.dev](https://www.onemeaning.dev)
