@@ -1,7 +1,8 @@
 <template>
   <header class="TheHeader py-12 lg:py-[4.563rem]">
-    <div class="container">
+    <div class="container flex flex-row items-center">
       <SharedMainLogo />
+      <SharedMainNavigation class="hidden md:block md:ml-20" />
     </div>
   </header>
 </template>
