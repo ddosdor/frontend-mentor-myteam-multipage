@@ -1,6 +1,8 @@
 <template>
   <div class="MobileMenu z-10">
-    <button @click="toggleMenu">
+    <button name="Open menu"
+            @click="toggleMenu"
+    >
       <SharedUiIcon hamburger
                     class="block"
       />
@@ -15,6 +17,7 @@
         >
           <div class="py-12 px-12 flex flex-col">
             <button class="ml-auto relative right-[-24px] top-[5px]"
+                    name="Close menu"
                     @click="toggleMenu"
             >
               <SharedUiIcon x
