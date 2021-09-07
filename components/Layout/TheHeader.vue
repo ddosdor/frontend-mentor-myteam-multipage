@@ -10,9 +10,7 @@
           contact us
         </SharedUiButton>
       </div>
-      <div class="md:hidden">
-        Mobile menu
-      </div>
+      <SharedMobileMenu class="ml-auto md:hidden" />
     </div>
   </header>
 </template>

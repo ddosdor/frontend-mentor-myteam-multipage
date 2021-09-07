@@ -1,7 +1,8 @@
 body
   @apply text-base font-semibold leading-28 text-primary-white bg-primary-midnightGreen
 
-.ui-as-link
-  @apply transition-colors duration-150 cursor-pointer 
-  @apply hover:text-primary-lightCoral
-  @apply focus:text-primary-lightCoral
+.fade-enter-active, .fade-leave-active
+  @apply transition-opacity duration-200
+
+.fade-enter, .fade-leave-to
+  @apply opacity-0

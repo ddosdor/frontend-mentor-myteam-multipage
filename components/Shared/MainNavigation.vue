@@ -3,7 +3,7 @@
        :class=" {'text-sm leading-25': smaller }"
   >
     <ul class="flex space-x-9"
-        :class="{ 'space-x-6': smaller }"
+        :class="[{ 'space-x-6': smaller }, additionalClass]"
     >
       <li>
         <SharedUiLink href="/">
@@ -26,6 +26,13 @@ export default defineComponent({
   name: 'MainNavigation',
   props: {
     smaller: Boolean,
+    /**
+     * Add additinal class to <ul> element
+     */
+    additionalClass: {
+      type: String,
+      default: null,
+    },
   },
 });
 </script>

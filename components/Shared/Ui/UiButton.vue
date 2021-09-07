@@ -9,6 +9,7 @@
              }"
              :disabled="disabled"
              :to="to"
+             @click="$emit('click')"
   >
     <slot />
   </component>
@@ -51,6 +52,7 @@ export default defineComponent({
       default: false,
     },
   },
+  emits: ['click'],
   setup(props) {
     const buttonType = ref<String>('primary');
     switch (true) {
