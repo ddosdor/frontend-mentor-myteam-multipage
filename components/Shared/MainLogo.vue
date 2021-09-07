@@ -1,11 +1,9 @@
 <template>
-  <client-only>
-    <NuxtImg src="/logo.svg"
-             :width="width"
-             :height="height"
-             alt="myteam logo"
-    />
-  </client-only>
+  <NuxtImg src="/logo.svg"
+           :width="width"
+           :height="height"
+           alt="myteam logo"
+  />
 </template>
 
 <script lang="ts">

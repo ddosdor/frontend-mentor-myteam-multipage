@@ -12,7 +12,10 @@
     >
       Ready to get started?
     </SharedUiHeading>
-    <SharedUiButton primary-dark>
+    <SharedUiButton primary-dark
+                    as-nuxt-link
+                    to="/contact-us"
+    >
       contact us
     </SharedUiButton>
   </section>

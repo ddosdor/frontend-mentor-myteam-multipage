@@ -1,8 +1,6 @@
 <template>
   <div class="flex flex-col flex-grow justify-end">
-    <SectionsHeroSection v-once />
-    <SectionsBenefitsSection v-once />
-    <SectionsSuccessStoriesSection v-once />
+    About page
     <SectionsCtaSection />
   </div>
 </template>
@@ -11,6 +9,6 @@
 import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'AboutPage',
 });
 </script>

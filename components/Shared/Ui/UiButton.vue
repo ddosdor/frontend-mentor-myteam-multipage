@@ -1,14 +1,17 @@
 <template>
-  <button class="UiButton"
-          :class="{
-            'UiButton--primary': buttonType === 'primary',
-            'UiButton--primaryDark': buttonType === 'primaryDark',
-            'UiButton--secondary': buttonType === 'secondary',
-          }"
-          :disabled="disabled"
+  <component :is="asNuxtLink ? 'nuxt-link' : 'button'"
+             class="UiButton"
+             :class="{
+               'UiButton--primary': buttonType === 'primary',
+               'UiButton--primaryDark': buttonType === 'primaryDark',
+               'UiButton--secondary': buttonType === 'secondary',
+               'UiButton--as-link': asNuxtLink,
+             }"
+             :disabled="disabled"
+             :to="to"
   >
     <slot />
-  </button>
+  </component>
 </template>
 
 <script lang="ts">
@@ -29,6 +32,17 @@ export default defineComponent({
      * Set button as secondary
      */
     secondary: Boolean,
+    /**
+     * Set button as link (NuxtLink)
+     */
+    asNuxtLink: Boolean,
+    /**
+     * Page url if button is used as a nuxt-link
+     */
+    to: {
+      type: String,
+      default: null,
+    },
     /**
      * Set button as disabled
      */
@@ -53,8 +67,11 @@ export default defineComponent({
 
 <style lang="sass" scoped>
 .UiButton
-  @apply border-2 px-8 rounded-3xl h-12 transition-colors duration-150
+  @apply border-2 px-8 rounded-3xl h-12 transition-colors duration-150 block
   @apply disabled:cursor-not-allowed disabled:opacity-20
+
+  &--as-link
+    @apply leading-[43px]
 
   &--primary
     @apply border-primary-white text-primary-white
