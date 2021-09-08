@@ -29,11 +29,9 @@ export default {
   image: {
     // Should fix transformation for Vercel according to: https://github.com/nuxt/image/issues/395#issuecomment-905868750
     screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
+      small: 640,
+      medium: 768,
+      large: 1024,
     },
   },
   plugins: [

@@ -3,20 +3,14 @@
              md:flex-row md:space-y-0 md:justify-between
             "
   >
-    <li>
-      <NuxtPicture src="/logos/logo-the-verge.png"
-                   sizes="sm:146.56px md:103px lg:165px"
-                   alt="Test"
-      />
-    </li>
     <li v-for="(client, index) in clients"
         :key="`clients-index-${index}`"
     >
       <NuxtPicture :src="client.logo.src"
                    :sizes="`
-                  sm:${client.logo.sizes.sm}
-                  md:${client.logo.sizes.md}
-                  lg:${client.logo.sizes.lg}
+                  small:${client.logo.sizes.sm}
+                  medium:${client.logo.sizes.md}
+                  large:${client.logo.sizes.lg}
                   `"
                    :alt="`${client.name} logo`"
       />
