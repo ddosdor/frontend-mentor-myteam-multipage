@@ -34,10 +34,10 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
+    '@nuxt/image',
   ],
   modules: [
     '@nuxtjs/pwa',
-    '@nuxt/image',
   ],
   storybook: {
     parameters: {
