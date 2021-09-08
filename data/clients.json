@@ -1,0 +1,57 @@
+[
+  { 
+    "name": "The Verge",
+    "logo": {
+      "sizes": {
+        "sm": "146.56px",
+        "md": "103px",
+        "lg": "165px"
+      },
+      "src": "/logos/logo-the-verge.png"
+    }
+  },
+  { 
+    "name": "The Jakarta Post",
+    "logo": {
+      "sizes": {
+        "sm": "162.21px",
+        "md": "114px",
+        "lg": "184px"
+      },
+      "src": "/logos/logo-jakarta-post.png"
+   }
+  },
+  { 
+    "name": "The Guardian",
+    "logo": {
+      "sizes": {
+        "sm": "159.37px",
+        "md": "112px",
+        "lg": "180px"
+      },
+      "src": "/logos/logo-the-guardian.png"
+    }
+  },
+  { 
+    "name": "techradar.",
+    "logo": {
+      "sizes": {
+        "sm": "146.56px",
+        "md": "103px",
+        "lg": "165px"
+      },
+      "src": "/logos/logo-tech-radar.png"
+    }
+  },
+  { 
+    "name": "Gadgets Now",
+    "logo": {
+      "sizes": {
+        "sm": "86.8px",
+        "md": "61px",
+        "lg": "98px"
+      },
+      "src": "/logos/logo-gadgets-now.png"
+    }
+  }
+]

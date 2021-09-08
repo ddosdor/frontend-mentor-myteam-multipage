@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col flex-grow justify-end">
-    About page
+    <SectionsOurClientsSection />
     <SectionsCtaSection />
   </div>
 </template>

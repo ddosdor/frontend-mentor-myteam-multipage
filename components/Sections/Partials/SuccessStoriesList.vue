@@ -27,6 +27,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api';
+
 import successStoriesListData from '@/data/success-stories.json';
 
 export default defineComponent({
