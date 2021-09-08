@@ -3,7 +3,6 @@
              class="UiHeading w-full text-center
                     md:text-left
                    "
-             :class="h1Size"
   >
     <slot />
   </component>
@@ -18,11 +17,7 @@ export default defineComponent({
     /**
      * Set heading as 'h1' with 'large' class
      */
-    h1Large: Boolean,
-    /**
-     * Set heading as 'h1' with 'small' class
-     */
-    h1Small: Boolean,
+    h1: Boolean,
     /**
      * Set heading as 'h2'
      */
@@ -34,16 +29,14 @@ export default defineComponent({
   },
   setup(props) {
     const htmlHeadingElement = ref<String>('h1');
-    const h1Size = ref<String | null>(null);
     switch (true) {
-      case props.h1Large: h1Size.value = 'large'; break;
-      case props.h1Small: h1Size.value = 'small'; break;
+      case props.h1: htmlHeadingElement.value = 'h1'; break;
       case props.h2: htmlHeadingElement.value = 'h2'; break;
       case props.h3: htmlHeadingElement.value = 'h3'; break;
-      default: h1Size.value = 'large';
+      default: htmlHeadingElement.value = 'h1';
     }
 
-    return { htmlHeadingElement, h1Size };
+    return { htmlHeadingElement };
   },
 });
 </script>
@@ -54,12 +47,10 @@ h2,
 h3
   @apply font-bold
 
-h1,.large
-  @apply text-[100px] leading-100
-
-h1,.small
+h1
   @apply text-[40px] leading-[40px]
   @apply md:text-[64px] md:leading-56
+  @apply lg:text-[64px] lg:leading-100
 
 h2
   @apply text-[32px] leading-[32px]

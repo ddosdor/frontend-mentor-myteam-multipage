@@ -20,14 +20,9 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 
-export const h1Large = Template.bind({});
-h1Large.args = {
-  h1Large: true,
-};
-
-export const h1Small = Template.bind({});
-h1Small.args = {
-  h1Small: true,
+export const h1 = Template.bind({});
+h1.args = {
+  h1: true,
 };
 
 export const h2 = Template.bind({});
