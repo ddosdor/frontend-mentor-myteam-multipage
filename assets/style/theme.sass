@@ -1,8 +1,16 @@
 body
   @apply text-base font-semibold leading-28 text-primary-white bg-primary-midnightGreen
 
+/** Vue.js transition */
 .fade-enter-active, .fade-leave-active
   @apply transition-opacity duration-200
 
 .fade-enter, .fade-leave-to
+  @apply opacity-0
+
+/** Nuxt.js page transition  */
+.page-enter-active, .page-leave-active
+  @apply transition-opacity duration-200
+
+.page-enter, .page-leave-to
   @apply opacity-0
