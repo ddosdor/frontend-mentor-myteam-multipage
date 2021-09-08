@@ -3,6 +3,12 @@
              md:flex-row md:space-y-0 md:justify-between
             "
   >
+    <li>
+      <NuxtImg src="/logos/logo-the-verge.png"
+               sizes="sm:146.56px md:103px lg:165px"
+               alt="Test"
+      />
+    </li>
     <li v-for="(client, index) in clients"
         :key="`clients-index-${index}`"
     >
