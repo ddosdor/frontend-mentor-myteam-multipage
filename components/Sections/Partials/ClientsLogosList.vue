@@ -4,21 +4,21 @@
             "
   >
     <li>
-      <NuxtImg src="/logos/logo-the-verge.png"
-               sizes="sm:146.56px md:103px lg:165px"
-               alt="Test"
+      <NuxtPicture src="/logos/logo-the-verge.png"
+                   sizes="sm:146.56px md:103px lg:165px"
+                   alt="Test"
       />
     </li>
     <li v-for="(client, index) in clients"
         :key="`clients-index-${index}`"
     >
-      <NuxtImg :src="client.logo.src"
-               :sizes="`
+      <NuxtPicture :src="client.logo.src"
+                   :sizes="`
                   sm:${client.logo.sizes.sm}
                   md:${client.logo.sizes.md}
                   lg:${client.logo.sizes.lg}
                   `"
-               :alt="`${client.name} logo`"
+                   :alt="`${client.name} logo`"
       />
     </li>
   </ul>
