@@ -2,7 +2,6 @@
   <section class="HeroSection relative pt-8 pb-[12.313rem]
                   md:pb-64
                  "
-           :style="style"
   >
     <SharedUtilitiesSectionContainerWrapper class="container flex flex-col items-center
                                                    lg:flex-row
