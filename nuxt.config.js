@@ -26,6 +26,16 @@ export default {
   css: [
     '~/assets/style/main.sass',
   ],
+  image: {
+    // Should fix transformation for Vercel according to: https://github.com/nuxt/image/issues/395#issuecomment-905868750
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    },
+  },
   plugins: [
   ],
   components: true,
