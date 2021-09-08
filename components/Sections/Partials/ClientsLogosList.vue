@@ -8,9 +8,9 @@
     >
       <NuxtPicture :src="client.logo.src"
                    :sizes="`
-                  small:${client.logo.sizes.sm}
-                  medium:${client.logo.sizes.md}
-                  large:${client.logo.sizes.lg}
+                  sm:${client.logo.sizes.sm}
+                  md:${client.logo.sizes.md}
+                  lg:${client.logo.sizes.lg}
                   `"
                    :alt="`${client.name} logo`"
       />

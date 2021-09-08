@@ -27,11 +27,27 @@ export default {
     '~/assets/style/main.sass',
   ],
   image: {
-    // Should fix transformation for Vercel according to: https://github.com/nuxt/image/issues/395#issuecomment-905868750
+    // provider: 'vercel', // https://github.com/nuxt/image/issues/244#issuecomment-832670425
     screens: {
-      small: 640,
-      medium: 768,
-      large: 1024,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      // Should fix transformation for Vercel according to: https://github.com/nuxt/image/issues/395#issuecomment-905868750
+      logoVergeSm: 146,
+      logoVergeMd: 103,
+      logoVergeLg: 165,
+      logoJakartaSm: 162,
+      logoJakartaMd: 114,
+      logoJakartaLg: 184,
+      logoGuardianSm: 159,
+      logoGuardianMd: 112,
+      logoGuardianLg: 180,
+      logoTechradarSm: 146,
+      logoTechradarMd: 103,
+      logoTechradarLg: 165,
+      logoGadgetSm: 86,
+      logoGadgetMd: 61,
+      logoGadgetLg: 98,
     },
   },
   plugins: [
