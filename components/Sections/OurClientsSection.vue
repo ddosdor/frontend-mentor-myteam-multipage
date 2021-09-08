@@ -35,7 +35,7 @@ export default defineComponent({
         switch (true) {
           case breakpoints.between('md', 'lg').value: backgroundPosition.value = 'top -100px left'; break;
           case breakpoints.greater('lg').value: backgroundPosition.value = 'top 180px'; break;
-          default: backgroundPosition.value = 'top left';
+          default: backgroundPosition.value = 'top -100px left -100px';
         }
       },
     );
