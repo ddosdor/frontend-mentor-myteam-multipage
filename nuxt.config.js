@@ -30,8 +30,8 @@ export default {
     // provider: 'vercel', // https://github.com/nuxt/image/issues/244#issuecomment-832670425
     screens: {
       sm: 640,
-      md: 768,
-      lg: 1024,
+      md: 1024,
+      lg: 1280,
       // Should fix transformation for Vercel according to: https://github.com/nuxt/image/issues/395#issuecomment-905868750
       logoVergeSm: 146,
       logoVergeMd: 103,

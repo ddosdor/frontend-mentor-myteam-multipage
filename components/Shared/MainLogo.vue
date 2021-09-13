@@ -8,7 +8,8 @@
 
 <script lang="ts">
 import { defineComponent, computed } from '@nuxtjs/composition-api';
-import { useBreakpoints, breakpointsTailwind } from '@vueuse/core';
+
+import { useScreenBreakpoints } from '@/composables/useScreenBreakpoints';
 
 export default defineComponent({
   name: 'MainLogo',
@@ -19,7 +20,7 @@ export default defineComponent({
     smaller: Boolean,
   },
   setup(props) {
-    const breakpoints = useBreakpoints(breakpointsTailwind);
+    const breakpoints = useScreenBreakpoints();
     const widthSmaller = props.smaller ? '96px' : '128px';
     const heightSmaller = props.smaller ? '24px' : '32px';
 

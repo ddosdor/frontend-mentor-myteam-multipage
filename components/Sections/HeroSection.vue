@@ -27,7 +27,7 @@
       </div>
     </SharedUtilitiesSectionContainerWrapper>
 
-    <div class="absolute w-full left-0 bottom-0 flex justify-center
+    <div class="absolute w-full left-0 bottom-0 flex justify-center -z-1
                 lg:justify-end lg:pr-[165px]
                "
     >
@@ -54,7 +54,7 @@
       /></g></svg>
     </div>
 
-    <div class="hidden absolute left-[-100px] bottom-[250px]
+    <div class="hidden absolute left-[-100px] bottom-[250px] -z-1
                 lg:block
                "
     >

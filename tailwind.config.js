@@ -34,6 +34,10 @@ module.exports = {
         darkGreen: '#002529',
       },
     },
+    screens: {
+      md: '768px',
+      lg: '1280px',
+    },
     lineHeight: {
       100: '100px',
       56: '56px',
@@ -42,15 +46,8 @@ module.exports = {
       25: '25px',
     },
     extend: {
-      container: {
-        center: true,
-        screens: {
-          sm: '327px',
-          md: '689px',
-          lg: '1110px',
-          xl: '1110px',
-          '2xl': '1110px',
-        },
+      zIndex: {
+        '-1': '-1',
       },
     },
   },
@@ -59,5 +56,23 @@ module.exports = {
       opacity: ['disabled'],
     },
   },
-  plugins: [],
+  plugins: [
+    ({ addComponents }) => {
+      addComponents({
+        '.container': {
+          marginInline: 'auto',
+          maxWidth: '100%',
+          paddingInline: '24px',
+          '@screen md': {
+            maxWidth: '689px',
+            padding: 0,
+          },
+          '@screen lg': {
+            maxWidth: '1110px',
+            padding: 0,
+          },
+        },
+      });
+    },
+  ],
 };

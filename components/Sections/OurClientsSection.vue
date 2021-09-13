@@ -20,13 +20,14 @@
 
 <script lang="ts">
 import { defineComponent, toRefs, watchEffect } from '@nuxtjs/composition-api';
-import { useBreakpoints, breakpointsTailwind } from '@vueuse/core';
+
+import { useScreenBreakpoints } from '@/composables/useScreenBreakpoints';
 import { useBackgroundImage } from '@/composables/useBackgroundImages';
 
 export default defineComponent({
   name: 'OurClientsSection',
   setup() {
-    const breakpoints = useBreakpoints(breakpointsTailwind);
+    const breakpoints = useScreenBreakpoints();
     const { style } = useBackgroundImage('bg-pattern-our-clients');
     const { backgroundPosition } = toRefs(style);
 

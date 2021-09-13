@@ -23,13 +23,14 @@
 
 <script lang="ts">
 import { toRefs, defineComponent, watchEffect } from '@nuxtjs/composition-api';
-import { useBreakpoints, breakpointsTailwind } from '@vueuse/core';
+
+import { useScreenBreakpoints } from '@/composables/useScreenBreakpoints';
 import { useBackgroundImage } from '@/composables/useBackgroundImages';
 
 export default defineComponent({
   name: 'CtaSection',
   setup() {
-    const breakpoints = useBreakpoints(breakpointsTailwind);
+    const breakpoints = useScreenBreakpoints();
     const { style } = useBackgroundImage('bg-pattern-cta');
     const { backgroundPosition } = toRefs(style);
 
